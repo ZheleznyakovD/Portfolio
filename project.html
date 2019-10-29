@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -13,12 +14,12 @@
         <div class="container">
             <div class="header-first-project-row">
                 <div class="header-logo">
-                    <h2 class="header__name">
+                    <h2 class="header__name  wow pulse">
                         <span>Дмитрий Железняков</span><br>
                          Верстальщик и веб-разработчик
                      </h2>
                 </div>
-                <div class="social-icons">
+                <div class="social-icons wow bounceInRight">
                     <a href="https://github.com/ZheleznyakovD" target="_blank" class="social-icon-link">
                             <img src="img/github.png" alt="github" class="social-icon-img">
                     </a>
@@ -37,32 +38,34 @@
     </header>
     <article class="first-project">
         <div class="container">
-            <h1 class="first-project-title">Верстка интернет магазина “Медиамаркет”</h1>
-            <div class="badge-wrap">
+            <h1 class="first-project-title wow pulse">Верстка интернет магазина “Медиамаркет”</h1>
+            <div class="badge-wrap wow pulse">
                 <div class="badge badge__html">HTML</div>
                 <div class="badge badge__CSS">CSS</div>
                 <div class="badge badge__Bootstrap">Bootstrap</div>
             </div>
-            <p class="project-description"> Описание этого замечательного проекта. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <div class="first-project-link">
+            <p class="project-description wow pulse"> Описание этого замечательного проекта. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="first-project-link wow pulse">
                 <a href="#">Онлайн демо</a>
             </div>
-            <div class="project-view">
+            <div class="project-view wow zoomIn">
                 <img src="img/Mediamarket.jpg" alt="project appearance">
             </div>
             <div class="pagination">
-                <div class="pagination__btn"><a href="#">Предыдущий проект</a> </div>
-                <div class="pagination__btn"><a href="#">Следующий проект</a> </div>
+                <div class="pagination__btn wow fadeInLeft"><a href="#">Предыдущий проект</a> </div>
+                <div class="pagination__btn wow fadeInRight"><a href="#">Следующий проект</a> </div>
             </div>
         </div>
     </article>
     <footer class="project-footer">
         <div class="container">
-            <div class="project-footer-content">
+            <div class="project-footer-content wow pulse">
                 <h3 class="project-footer-title">За созданием сайта:</h3>
-                <p class="project-footer-text">обращайтесь на <span> <a href="mailto:myname@gmail.com">myname@gmail.com</a></span> </p>
+                <p class="project-footer-text">обращайтесь на <a href="mailto:web.zheleznyakov@bk.ru">web.zheleznyakov@bk.ru</a></p>
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>  new WOW().init();  </script>
 </body>
 </html>
